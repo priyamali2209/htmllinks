@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quary</title>
+    <style>
+        .box{
+            text-align: center;
+            font-size: 72px;
+            background-color: rgb(241, 160, 187);
+            color: white;
+            display: none;
+           
+        }
+       @media only screen and (max-width:300px){
+        #box-1{
+            display: block;
+            background-color: peru;
+        }
+       }
+
+       @media only screen and (min-width:300px) and (max-width:500px){
+        #box-2{
+            display: block;
+            background-color: rgb(20, 129, 129);
+        }
+       }
+    
+       @media only screen and (min-width:500px) and (max-width:700px){
+        #box-3{
+            display: block;
+            background-color: rgb(221, 189, 6);
+        }
+       }
+
+       @media only screen and (min-width:700px) {
+        #box-4{
+            display: block;
+            background-color: rgb(40, 121, 121);
+        }
+       }
+   
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">i am i phone</div>
+    <div class="box" id="box-2">i am a phone</div>
+    <div class="box" id="box-3">i am a tablet</div>
+    <div class="box" id="box-4">i am a computer</div>
+    
+</body>
+</html>

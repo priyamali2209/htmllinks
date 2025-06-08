@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selectors</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0%;
+            background: url('https://source.unsplash.com/collection/190727/1600*900')
+            no-repeat center center/cover;
+        }
+
+        .navigation{
+            font-size: 22px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 12px 12px;
+        }
+      header{
+        display: flex;
+        /* flex-direction: row; */
+        flex-direction: column;
+      }
+      h1{
+        font-size: 4rem;
+      }
+      section{
+        margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      section::before{
+        content: "This is a contant"
+      }
+
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item1">home</li>
+                <li class="item2">About</li>
+                <li class="item3">Services</li>
+                <li class="item4">contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Wellcome to coding world</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde 
+                cupiditate qui deleniti maiores fugiat ex commodi rem error beatae ipsa!</p>
+        </section>
+    </header>
+    
+</body>
+</html>

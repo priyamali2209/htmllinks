@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions</title>
+    
+</head>
+<body>
+   
+        <script>
+          var str = "This is a string";
+          console.log(str);
+
+          //Frist occurence of a string
+          var position = str.indexOf('is');
+          console.log(position)
+
+          //Last occurence of a string
+          position = str.lastIndexOf('is');
+          console.log(position)
+
+          //sub string from string
+          // it takes negative values
+          var substr = str.slice(1,6);
+          console.log(substr)
+
+          //it can not take negative values
+          var substr1 = str.substring(1,6);
+          console.log(substr1)
+         
+          var substr = str.substr(1,6);
+          console.log(substr)
+
+          //replace substring in another string
+          var replace = str.replace('string' , 'Priya');
+          console.log(str)
+          console.log(replace)
+
+          //convert the string into uppercase and lowercase character
+          console.log(str.toUpperCase());
+          console.log(str.toLowerCase());
+
+          //conact original string with another string
+          var newstring = str.concat('new string');
+          console.log(newstring)
+
+          // Remove white spaces from the string
+          var strwhitewhitespace = "This containes     white spaces";
+          console.log(strwhitewhitespace)
+          console.log(strwhitewhitespace.trim())
+
+          //Display char present at that place
+          var char2 = str.charAt(2);
+          console.log(char2)
+
+          //not important
+          var char1 = str.charCodeAt(2);
+          console.log(char1)
+          
+        </script>
+    </div>
+    
+</body>
+</html>

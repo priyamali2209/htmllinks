@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intraction using alert ,confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+        // Alert in in-browser JavaScript.  it does not written anything
+        // alert("This is a message");
+
+        // let name = prompt("what is your name?" , "Guest");
+        // console.log(name);
+
+        let deletePost = confirm("Do you really want to delete??");
+
+        if(deletePost)
+        {
+            console.log("Your Post is deleted successfully");
+        }
+        else
+        {
+            console.log("Your post has not been deleted");
+        }
+        // console.log(deletePost);
+        
+    </script>
+</body>
+</html>

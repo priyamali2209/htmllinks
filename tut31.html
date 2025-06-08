@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more selectors</title>
+    <style>
+        h1{
+            background-color: pink;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* if p is contained by any li which is contained by div */
+        div li p{
+            color: rgb(30, 124, 136);
+            background-color: rgb(255, 152, 246);
+            font-weight: bold;
+        }
+            
+        /* if p is right inside div */
+        div > p{
+            color: rgb(114, 78, 102);
+            background-color: aqua;
+            font-weight: bold;
+        }
+
+        /* if p is next sibling of div */
+        div + p{
+            color: rgb(105, 105, 50);
+            background-color: rgb(233, 233, 233);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is more about selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"> <p>This is another paragraph inside div</p></li>
+                <li>this will not affected</li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>this is a another paragraph</p>
+    </div>
+    <p>this is a outer most paragraph</p>
+    
+</body>
+</html>
